@@ -274,7 +274,7 @@ if  ot == 'Car Type' :
 if ot == 'Motorcycle Type':
         Page2.page2()
 
-st.session_state['answer'] = ''!
+st.session_state['answer'] = ''
 
 st.write(st.session_state)
 
