@@ -104,9 +104,9 @@ if ot == 'Home':
 
         cols = st.columns(2)
         with cols[0]:
-            number = st.number_input('Start Horse Power', min_value=1,max_value=1500)
+            number = st.number_input('Start Horse Power', min_value=1, max_value = 1500)
         with cols[1]:
-            number1 = st.number_input('How many seat', min_value=1,max_vallue=8)
+            number1 = st.number_input('How many seat', min_value=1, max_vallue = 8)
 
         x = (number, number1)
         pred1 = np.asarray(x)
@@ -274,16 +274,4 @@ if  ot == 'Car Type' :
 if ot == 'Motorcycle Type':
         Page2.page2()
 
-st.session_state['answer'] = ''
 
-st.write(st.session_state)
-
-realans = ['', 'abc', 'edf']
-
-if  st.session_state['answer'] in realans:
-    answerStat = "correct"
-elif st.session_state['answer'] not in realans:
-    answerStat = "incorrect"
-
-st.write(st.session_state)
-st.write(answerStat)
