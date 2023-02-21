@@ -273,3 +273,17 @@ if  ot == 'Car Type' :
 
 if ot == 'Motorcycle Type':
         Page2.page2()
+
+st.session_state['answer'] = ''!
+
+st.write(st.session_state)
+
+realans = ['', 'abc', 'edf']
+
+if  st.session_state['answer'] in realans:
+    answerStat = "correct"
+elif st.session_state['answer'] not in realans:
+    answerStat = "incorrect"
+
+st.write(st.session_state)
+st.write(answerStat)
