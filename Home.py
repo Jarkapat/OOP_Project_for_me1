@@ -106,7 +106,7 @@ if ot == 'Home':
         with cols[0]:
             number = st.number_input('Start Horse Power', min_value=1, max_value = 1500)
         with cols[1]:
-            number1 = st.number_input('How many seat', min_value=1)
+            number1 = st.number_input('How many seat', min_value=1,max_value=8)
 
         x = (number, number1)
         pred1 = np.asarray(x)
